@@ -1,0 +1,73 @@
+---
+import './src/styles/global.css'
+import Header from '../components/Header.astro'
+// Supports weights 100-900
+import '@fontsource-variable/onest';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<Header />
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root{
+		color-scheme: dark;
+		---color-m1:#AA60C8;
+		---color-m2:#D69ADE;
+		---color-m3:#EABDE6;
+		---color-m4:#FFDFEF;
+		
+
+	}
+
+	.text-color-m1{
+		color: var(---color-m1);
+	}
+
+	.bg-d1{
+		background-color: #121212;
+	}
+	.border-1{
+		border: 2px solid rgba(250, 251, 252, .05);
+	}
+	.ho-1:hover{
+		border: 2px solid #AA60C8;
+	}
+
+	.border-c-m3{
+		border-color: #EABDE6;
+	}
+	.bg-m1{
+		background-color: #AA60C8;
+	}
+
+	.border-d2{
+		border-color: rgba(250, 251, 252, .05);
+	}
+
+	.bg-d2{
+		background-color: rgba(250, 251, 252, .08);
+	}
+
+	body {
+		font-family: 'Onest Variable', sans-serif;
+		background-color: #010001;
+	}
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
