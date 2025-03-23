@@ -5,14 +5,14 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<main class="m-auto max-w-[1000px]">
+	<main class="m-auto mt-20 max-w-[1000px]" >
 		<!-- Foto con información de contacto -->
-		<div class="flex mx-auto space-y-4 gap-x-8 p-4 my-6  items-center justify-center ">
+		<div class="flex mx-auto space-y-4 gap-x-8 p-4 my-6  mb-20 items-center justify-center " >
 			<img src="/src/assets/photo.png" class="mx-auto bg-d2 block h-80 rounded-3xl sm:mx-0 sm:shrink-0">
 			<div class="max-w-[600px]">
 				<h3 class="text-[16px] text-color-m1">Hola, Soy</h3>
 				<h1 class="text-3xl  mb-2.5">Jorge Humberto Gaviria Botero</h1>
-				<p>An Innovative Full Stack Developer based in Juba, South Sudan. Skilled in leading end-to-end projects, crafting intuitive interfaces, and delivering scalable solutions that drive business growth.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium iste doloremque sit laboriosam repellat optio esse sint quo. Impedit alias assumenda ad quos hic ipsa! Earum qui neque nam.</p>
 				<div class="flex justify-center my-6 gap-x-6">
 					<a class="group p-3 bg-d1 border-1 opacity-70 hover:opacity-100 rounded-[10px] ho-1 relative cursor-pointer" href="#" onclick="copyToClipboard(event)">
 						<p class="flex items-center gap-x-2">
@@ -41,16 +41,16 @@ import Layout from '../layouts/Layout.astro';
 							jogaviriab@unal.edu.co
 						</p>
 					</a>
-					<a class="group p-3 bg-d1 border-1 opacity-70 hover:opacity-100 rounded-[10px] ho-1 relative cursor-pointer" href="#" >
+					<a class="group p-3 bg-d1 border-1 opacity-70 hover:opacity-100 rounded-[10px] ho-1 relative cursor-pointer transition-all transition-discrete" href="#" >
 						<p class="flex items-center gap-x-2">
-							<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="group-hover:hidden text-color-m1 icon icon-tabler icons-tabler-outline icon-tabler-device-mobile">
+							<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="group-hover:hidden text-color-m1 icon icon-tabler icons-tabler-outline icon-tabler-device-mobile ">
 								<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
 								<path d="M11 4h2" />
 								<path d="M12 17v.01" />
 							</svg>
 
 							<!-- Icono en hover -->
-							<svg id="icon-hover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden group-hover:block text-color-m1 icon icon-tabler icons-tabler-outline icon-tabler-copy">
+							<svg id="icon-hover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden group-hover:block text-color-m1 icon icon-tabler icons-tabler-outline icon-tabler-copy  ">
 								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 								<path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
 								<path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
@@ -64,7 +64,7 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<!-- Habilidades -->
-		<div class=" mx-auto mt-8">
+		<div class=" mx-auto mt-8 " id="habilidades">
 			<div class="flex w-fit gap-2.5  px-8 items-center  justify-baseline">
 				<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-book">
 					<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
@@ -74,7 +74,7 @@ import Layout from '../layouts/Layout.astro';
 				<h1 class="text-4xl mx-auto">Habilidades</h1>
 			</div>
 			<div class="grid grid-cols-2  mt-8 px-8 sm:grid-cols-3 gap-10">
-				<div class="bg-d1 rounded-[10px] flex px-2.5 py-4 gap-x-3">
+				<div class="bg-neutral-950 border-d2 border-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 rounded-[10px] flex px-2.5 py-4 gap-x-3">
 					<svg height="50" preserveAspectRatio="xMidYMid" viewBox="-3.576 -8.996 259.406 260.1" width="50" xmlns="http://www.w3.org/2000/svg">
 						<g fill="#00546b">
 							<path d="m235.648 194.212c-13.918-.347-24.705 1.045-33.752 4.872-2.61 1.043-6.786 1.044-7.134 4.35 1.392 1.392 1.566 3.654 2.784 5.567 2.09 3.479 5.741 8.177 9.047 10.614 3.653 2.783 7.308 5.566 11.134 8.002 6.786 4.176 14.442 6.611 21.053 10.787 3.829 2.434 7.654 5.568 11.482 8.177 1.914 1.39 3.131 3.654 5.568 4.523v-.521c-1.219-1.567-1.567-3.828-2.784-5.568-1.738-1.74-3.48-3.306-5.22-5.046-5.045-6.784-11.308-12.7-18.093-17.571-5.567-3.828-17.747-9.047-20.008-15.485 0 0-.175-.173-.348-.347 3.827-.348 8.35-1.74 12.005-2.784 5.915-1.567 11.308-1.218 17.398-2.784 2.783-.696 5.567-1.566 8.35-2.436v-1.565c-3.13-3.132-5.392-7.307-8.698-10.265-8.873-7.657-18.617-15.137-28.707-21.4-5.394-3.48-12.354-5.742-18.095-8.699-2.086-1.045-5.567-1.566-6.784-3.306-3.133-3.827-4.873-8.872-7.134-13.396-5.044-9.57-9.917-20.182-14.267-30.272-3.13-6.786-5.044-13.572-8.872-19.834-17.92-29.577-37.406-47.497-67.33-65.07-6.438-3.653-14.093-5.219-22.27-7.132-4.348-.175-8.699-.522-13.048-.697-2.784-1.218-5.568-4.523-8.004-6.089-9.915-6.264-35.492-19.833-42.799-1.913-4.698 11.308 6.96 22.442 10.96 28.185 2.96 4.001 6.786 8.524 8.874 13.048 1.218 2.956 1.565 6.09 2.783 9.221 2.785 7.653 5.393 16.18 9.048 23.314 1.914 3.653 4.001 7.48 6.437 10.786 1.392 1.913 3.827 2.784 4.35 5.915-2.435 3.48-2.61 8.7-4.003 13.049-6.263 19.66-3.826 44.017 5.046 58.457 2.783 4.348 9.395 13.92 18.268 10.265 7.83-3.131 6.09-13.048 8.35-21.747.524-2.09.176-3.48 1.219-4.872v.349c2.436 4.87 4.871 9.569 7.133 14.44 5.394 8.524 14.788 17.398 22.617 23.314 4.177 3.13 7.482 8.524 12.702 10.438v-.523h-.349c-1.044-1.566-2.61-2.261-4.001-3.48-3.131-3.13-6.612-6.958-9.047-10.438-7.306-9.744-13.745-20.53-19.486-31.665-2.783-5.392-5.22-11.308-7.481-16.701-1.045-2.09-1.045-5.22-2.784-6.263-2.61 3.827-6.437 7.133-8.351 11.83-3.304 7.481-3.653 16.702-4.871 26.27-.696.176-.349 0-.697.35-5.566-1.394-7.48-7.134-9.569-12.006-5.22-12.352-6.09-32.186-1.565-46.452 1.218-3.654 6.438-15.136 4.35-18.616-1.044-3.306-4.525-5.22-6.438-7.829-2.261-3.306-4.698-7.48-6.263-11.135-4.176-9.743-6.264-20.53-10.787-30.273-2.088-4.524-5.74-9.22-8.699-13.396-3.305-4.697-6.959-8.004-9.569-13.571-.869-1.913-2.088-5.045-.696-7.133.348-1.392 1.043-1.913 2.436-2.261 2.262-1.915 8.7.521 10.96 1.565 6.438 2.608 11.831 5.046 17.225 8.699 2.435 1.74 5.045 5.046 8.176 5.916h3.654c5.568 1.217 11.83.348 17.05 1.913 9.222 2.957 17.572 7.307 25.054 12.005 22.792 14.44 41.58 34.97 54.282 59.501 2.088 4 2.957 7.656 4.871 11.83 3.655 8.526 8.178 17.225 11.83 25.576 3.654 8.176 7.133 16.528 12.353 23.314 2.61 3.652 13.048 5.567 17.746 7.481 3.48 1.565 8.874 2.958 12.005 4.871 5.915 3.652 11.83 7.83 17.398 11.83 2.784 2.088 11.482 6.438 12.005 9.917z"/>
@@ -82,24 +82,24 @@ import Layout from '../layouts/Layout.astro';
 						</g>
 					</svg>
 					<div class="capitalize">
-						<h2 class="text-lg font-semibold capitalize">sql</h2>
-						<p class="text-gray-400 text-xs ">sistema de gestión de bases de datos relacional</p>
+						<h2 class="text-lg font-semibold capitalize">My sql</h2>
+						<p class="text-neutral-500 text-xs ">sistema de gestión de bases de datos relacional</p>
 					</div>
 
 				</div>
 
-				<div class="bg-d1 rounded-[10px] flex px-2.5 py-4 gap-x-3">
+				<div class="bg-neutral-950 border-d2 border-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  rounded-[10px] flex px-2.5 py-4 gap-x-3">
 					<img src="/src/assets/js.png" class="h-[50px] ">
 					<div class="capitalize">
 						<h2 class="text-lg font-semibold capitalize">javascript</h2>
-						<p class="text-gray-400 text-xs ">lenguaje de programación para desarrollo web interactivo</p>
+						<p class="text-neutral-500 text-xs ">lenguaje de programación para desarrollo web interactivo</p>
 
 					</div>
 
 					
 
 				</div>
-				<div class="bg-d1 rounded-[10px] flex px-2.5 py-4 gap-x-3">
+				<div class="bg-neutral-950 border-d2 border-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  rounded-[10px] flex px-2.5 py-4 gap-x-3">
 					<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[50px]">
 						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -121,12 +121,12 @@ import Layout from '../layouts/Layout.astro';
 					
 					<div class="capitalize">
 						<h2 class="text-lg font-semibold capitalize">python</h2>
-						<p class="text-gray-400 text-xs ">lenguaje de programación versátil y de alto nivel</p>
+						<p class="text-neutral-500 text-xs ">lenguaje de programación versátil y de alto nivel</p>
 					</div>
 
 				</div>
 
-				<div class="bg-d1 rounded-[10px] flex px-2.5 py-4 gap-x-3">
+				<div class="bg-neutral-950 border-d2 border-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 rounded-[10px] flex px-2.5 py-4 gap-x-3">
 					<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000" class="w-[50px] h-[50px] ">
 						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -139,23 +139,23 @@ import Layout from '../layouts/Layout.astro';
 					</svg>
 					<div class="capitalize">
 						<h2 class="text-lg font-semibold capitalize">django</h2>
-						<p class="text-gray-400 text-xs ">framework web para desarrollo backend en Python</p>
+						<p class="text-neutral-500 text-xs ">framework web para desarrollo backend en Python</p>
 					</div>
 
 				</div>
-				<div class="bg-d1 rounded-[10px] flex px-2.5 py-4 gap-x-3">
+				<div class="bg-neutral-950 border-d2 border-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  rounded-[10px] flex px-2.5 py-4 gap-x-3">
 					<svg height="50" viewBox=".15 .13 799.7 479.69" width="50" xmlns="http://www.w3.org/2000/svg">
 						<path d="m400 .13c-106.63 0-173.27 53.3-199.93 159.89 39.99-53.3 86.64-73.28 139.95-59.96 30.42 7.6 52.16 29.67 76.23 54.09 39.2 39.78 84.57 85.82 183.68 85.82 106.62 0 173.27-53.3 199.92-159.9-39.98 53.3-86.63 73.29-139.95 59.97-30.41-7.6-52.15-29.67-76.22-54.09-39.2-39.78-84.58-85.82-183.68-85.82zm-199.93 239.84c-106.62 0-173.27 53.3-199.92 159.9 39.98-53.3 86.63-73.29 139.95-59.96 30.41 7.61 52.15 29.67 76.22 54.08 39.2 39.78 84.58 85.83 183.68 85.83 106.63 0 173.27-53.3 199.93-159.9-39.99 53.3-86.64 73.29-139.95 59.96-30.42-7.59-52.16-29.67-76.23-54.08-39.2-39.78-84.57-85.83-183.68-85.83z" fill="#06b6d4"/>
 					</svg>
 					<div class="capitalize">
 						<h2 class="text-lg font-semibold capitalize">tailwind</h2>
-						<p class="text-gray-400 text-xs ">framework CSS para diseño web basado en clases utilitarias</p>
+						<p class="text-neutral-500 text-xs ">framework CSS para diseño web basado en clases utilitarias</p>
 					</div>
 
 
 
 				</div>
-				<div class="bg-d1 rounded-[10px] flex px-2.5 py-4 gap-x-3">
+				<div class="bg-neutral-950 border-d2 border-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  rounded-[10px] flex px-2.5 py-4 gap-x-3">
 					<svg height="50" width="50" xmlns="http://www.w3.org/2000/svg" viewBox="76 64 297.006 471">
 						<g fill-rule="evenodd">
 							<path d="M321 242.017v178.017l25.75-.267 25.75-.267.253-177.75.253-177.75H321zM159 145.5V199h52V92h-52zM76 357v178h52V179H76zm164-124.017V287H292.017l-.258-53.75-.259-53.75-25.75-.267-25.75-.267zM159 365v54h52V311h-52zm81 88v54h52V399h-52z" fill="#0c0454"/>
@@ -166,33 +166,15 @@ import Layout from '../layouts/Layout.astro';
 					  
 					<div class="capitalize">
 						<h2 class="text-lg font-semibold capitalize">pandas</h2>
-						<p class="text-gray-400 text-xs "> biblioteca de Python para análisis y manipulación de datos</p>
+						<p class="text-neutral-500 text-xs "> biblioteca de Python para análisis y manipulación de datos</p>
 					</div>
 
 
 				</div>
-				<div>
-
-
-				</div>
-				<div>
-
-
-				</div>
-				<div>
-
-
-				</div>
-				<div>
-
-
-				</div>
-
-			</div>
 		</div>
 		<!-- Estudios -->			
-		<div class="">
-			<div class="flex w-fit gap-2.5 px-8 items-center  justify-baseline">
+		<div class=" my-8 " id="estudios">
+			<div class="flex w-fit gap-2.5 px-8 items-center  justify-baseline mb-7">
 				<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-book">
 					<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
 					<path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" />
@@ -208,7 +190,7 @@ import Layout from '../layouts/Layout.astro';
 						<div class="absolute -left-2 w-4 h-4 bg-m1 rounded-full border-3 border-c-m3"></div>
 						<h3 class="text-lg font-semibold">Servicio Nacional de Aprendizaje SENA - Colombia</h3>
 						<span class="text-sm text-color-m1">2018 - 2020</span>
-						<p class="text-gray-400 mt-2">Media Tecnica en Desarrollo de Software</p>
+						<p class="text-neutral-500 mt-2">Media Tecnica en Desarrollo de Software</p>
 					</div>
 
 					<!-- Evento 2 -->
@@ -216,7 +198,7 @@ import Layout from '../layouts/Layout.astro';
 						<div class="absolute -left-2 w-4 h-4 bg-m1 rounded-full border-3 border-c-m3"></div>
 						<h3 class="text-lg font-semibold">Universidad Nacional de Colombia</h3>
 						<span class="text-sm text-color-m1">2021 - Actualidad</span>
-						<p class="text-gray-400 mt-2">Ingeniería de Sistemas e Informatica</p>
+						<p class="text-neutral-500 mt-2">Ingeniería de Sistemas e Informatica</p>
 					</div>
 				</div>
 			</div>
@@ -224,8 +206,15 @@ import Layout from '../layouts/Layout.astro';
 			<div class="px-8">
 				<h1 class="text-2xl mb-6">Certificaciones</h1>
 				<div class="grid sm:grid-cols-2 gap-4 ">
+				
 
-					<div class="border-2 flex border-amber-300 px-[15px] py-[30px]">
+
+					<div class="border-2 flex border-d2 bg-neutral-950 rounded-[10px] px-[15px] py-[30px] relative group overflow-hidden">
+						<div class=" w-[400px] h-[100px] -bottom-20 -right-47 to-20%   absolute -rotate-35 group-hover:-bottom-15  duration-700 transition-all transition-discrete ">
+							<div class="border-purple border-t-2  bg-gradient-to-r from-purple  h-[20px] group-hover:h-[15px] duration-700 transition-all transition-discrete"></div>
+							<div class=" border-purple border-t-2  bg-gradient-to-r from-purple h-[10px] group-hover:h-[30px] duration-700 transition-all transition-discrete"></div>
+							<div class="border-purple border-t-2  bg-gradient-to-r from-purple  h-[20px]"></div>
+						</div>
 						<div class="w-[70px] mx-2.5">
 							<svg viewBox="0 0 48 48" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill="#8f8f8f" stroke="#8f8f8f">
 								<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -233,11 +222,20 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 						<div >
 							<h1 class="font-semibold text-[20px]">Introduction to Data Science</h1>
-							<p>Analista de Datos • 2023</p>
+							<p class="text-neutral-500">Analista de Datos • 2023</p>
+							<a class="flex gap-1 text-neutral-500 hover:text-purple" href="https://coursera.org/share/c51e407ba9822d0c5a57782556475420" target="_blank">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-certificate "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" /><path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" /><path d="M6 9l12 0" /><path d="M6 12l3 0" /><path d="M6 15l2 0" /></svg>
+								Data Camp
+							</a>
 						</div>
 					</div>
 
-					<div class="border-2 flex border-amber-300 px-[15px] py-[30px]">
+					<div class="border-2 flex border-d2 bg-neutral-950 rounded-[10px] px-[15px] py-[30px] relative group overflow-hidden">
+						<div class=" w-[400px] h-[100px] -bottom-20 -right-47 to-20%   absolute -rotate-35 group-hover:-bottom-15  duration-700 transition-all transition-discrete ">
+							<div class="border-purple border-t-2  bg-gradient-to-r from-purple  h-[20px] group-hover:h-[15px] duration-700 transition-all transition-discrete"></div>
+							<div class=" border-purple border-t-2  bg-gradient-to-r from-purple h-[10px] group-hover:h-[30px] duration-700 transition-all transition-discrete"></div>
+							<div class="border-purple border-t-2  bg-gradient-to-r from-purple  h-[20px]"></div>
+						</div>
 						<div class="w-[70px] mx-2.5">
 							<svg fill="#dedede" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#dedede"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>pandas</title> <path d="M11.849 2.813h3.269v6.787h-3.268zM11.849 16.755h3.269v6.789h-3.268zM11.849 11.582h3.269v3.203h-3.268zM6.598 8.393h3.268v22.563h-3.269zM16.992 22.356h3.269v6.787h-3.269zM16.992 8.401h3.269v6.787h-3.269zM16.992 17.171h3.269v3.203h-3.269zM22.134 1.045h3.269v22.563h-3.269z"></path> </g></svg>
 							
@@ -245,6 +243,10 @@ import Layout from '../layouts/Layout.astro';
 						<div >
 							<h1 class="font-semibold text-[20px]">Manipulacion de datos con pandas</h1>
 							<p>Analista de Datos • 2025</p>
+							<a class="flex gap-1 text-neutral-500 hover:text-purple" href="https://coursera.org/share/c51e407ba9822d0c5a57782556475420" target="_blank">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-certificate"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" /><path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" /><path d="M6 9l12 0" /><path d="M6 12l3 0" /><path d="M6 15l2 0" /></svg>
+								Coursera
+							</a>
 						</div>
 					</div>
 				</div>
@@ -252,32 +254,41 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<!-- Proyectos -->
-		<div class="px-8 my-7" >
-			<div class="flex gap-2.5">
+		<div class="px-8 my-7 " id="proyectos" >
+			<div class="flex gap-2.5 mb-8">
 				<svg fill="#ffffff" viewBox="0 0 20.00 20.00" class="w-[24px]" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.0002"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M2,9H9V2H2ZM4,4H7V7H4Zm7-2V9h7V2Zm5,5H13V4h3ZM2,18H9V11H2Zm2-5H7v3H4Zm7,5h7V11H11Zm2-5h3v3H13Z"></path> </g> </g></svg>
 				<h1 class="text-4xl">Proyectos</h1>
 			</div>
 
-			<div class="grid sm:grid-cols-2 ">
-				<div class="border-2 border-amber-300 p-6" >
-					<img src="https://static.vecteezy.com/system/resources/previews/031/075/079/non_2x/png-icon-vector.jpg" class=" w-[90%] m-auto">
+			<div class="grid sm:grid-cols-2 gap-4">
+			<!-- Softel -->
+
+				
+				<div class=" border-2  border-d2  bg-neutral-950 shadow-xl p-6 relative rounded-2xl overflow-hidden group" >
+					
+					<img src="src/assets/SOFTEL.png" class=" w-[90%] h-auto m-auto rounded-2xl">
+					<div class=" w-[400px] h-[100px] left-44  to-20%  -bottom-20 absolute -rotate-35 group-hover:-bottom-15  duration-700 transition-all transition-discrete ">
+						<div class="border-purple border-t-2  bg-gradient-to-r from-purple  h-[40px] group-hover:h-[25px] duration-700 transition-all transition-discrete"></div>
+						<div class=" border-purple border-t-2  bg-gradient-to-r from-purple h-[30px] group-hover:h-[40px] duration-700 transition-all transition-discrete"></div>
+						<div class="border-purple border-t-2  bg-gradient-to-r from-purple  h-[40px]"></div>
+					</div>
 					<div class="mx-[5%]">
 
 
 						<div class="flex justify-between  my-6">
 							<h2 class="text-2xl">Softel</h2>
-							<div class="text-gray-500 flex">
+							<div class="text-neutral-700 flex">
 								<p class="flex justify-center items-center">
 										<svg viewBox="0 0 24 24" class="w-[24px] mx-2" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
 										<path d="M3 9H21M17 13.0014L7 13M10.3333 17.0005L7 17M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-									2021
+									2020
 								</p>
 							</div>
 						</div>
 
-						<div class="flex text-gray-400 justify-between gap-7">
-							<p class="flex gap-1.5">
+						<div class="flex text-neutral-700 justify-between gap-7">
+							<a class="flex gap-1.5 cursor-default" >
 								<svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"  class="w-[24px] text-green-300" stroke="#000000">
 									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -287,8 +298,8 @@ import Layout from '../layouts/Layout.astro';
 									</g>
 								</svg>
 								Completado
-							</p>
-							<p class="flex gap-1.5" >
+							</a>
+							<a class="flex gap-1.5 text-hover transition-all" href="#" >
 								<svg viewBox="0 0 24 24" class="w-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
 									<g id="SVGRepo_iconCarrier"> 
@@ -296,21 +307,46 @@ import Layout from '../layouts/Layout.astro';
 									</g>
 								</svg>
 								softel.com
-							</p>
-							<p class="flex gap-1.5">
-								<svg viewBox="0 0 20 20" class="w-[20px]" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#646872"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
+							</a>
+							<a class="flex gap-1.5 text-hover transition-all" href="#">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" /></svg>
 								Repositorio
-							</p>
+							</a>
+						</div>
+
+
+						<div class="my-5">
+							Softel es una plataforma web para la gestión hotelera, que organiza el registro de huéspedes, reservas y cuentas con seguridad y orden. Participó en SoftParty 2020 como una solución para optimizar la operatividad del sector.
+						</div>
+
+						<div class="text-neutral-700 flex gap-2 text-3xl border-y opacity-70 py-2.5">
+							<a class="text-hover transition-all">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-django"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" /><path d="M12 7v8.5l-2.015 .201a2.715 2.715 0 1 1 0 -5.402l2.015 .201" /><path d="M16 7v.01" /><path d="M16 10v5.586c0 .905 -.36 1.774 -1 2.414" /></svg>
+							</a>
+							<a class="text-hover transition-all">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M7.5 8h3v8l-2 -1" /><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" /></svg>
+							</a>
+							<a class="text-hover transition-all">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tailwind"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" /></svg>
+							</a>
+							<a class="text-hover transition-all" href="#" target="_blank">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-python"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" /><path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" /><path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" /><path d="M11 6l0 .01" /><path d="M13 18l0 .01" /></svg>
+							</a>
 						</div>
 					</div>
 				</div>
 
-				<div>
-					
-				</div>
+
+			
+
+
+
+
 			</div>
 		</div>
+		<div class="h-[40px]">
 
+		</div>
 	</main>
 
 
